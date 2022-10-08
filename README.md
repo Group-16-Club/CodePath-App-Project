@@ -1,7 +1,7 @@
 Original App Design Project - README Template
 ===
 
-# App Name Ideas: Parking Finder, Parker
+# Parking Finder
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -11,14 +11,14 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-The app shows users nearby parking options.
+The app shows users nearby parking options, and displays information to the user.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:** Map display, Location
 - **Mobile:** Interactive, displays a map with pins
-- **Story:** Allows users to see nearby parking according to their location.
-- **Market:** Anyone who uses a car, bike, or motorcycle can find use for this app.
+- **Story:** Allows users to see nearby parking according to their location. 
+- **Market:** Anyone who uses a car, bike, or motorcycle can find use for this app. Especially those in cities that lack parking.
 - **Habit:** Users can often check the app whenever they need parking, especially if they travel a lot throughout the day.
 - **Scope:** Start off with displaying parking areas with information, but perhaps expand to users being able to rate the spaces.
 
@@ -28,22 +28,19 @@ The app shows users nearby parking options.
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can view a map and interact with a map
+* User can view information on parking spaces
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can leave reviews on parking spaces
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Map Display Screen
+   * User can view a map and interact with a map
+* Parking Space Information
+   * User can view information on parking spaces
 
 ### 3. Navigation
 
