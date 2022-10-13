@@ -30,6 +30,7 @@ The app shows users nearby parking options, and displays information to the user
 * User can view a map and interact with a map
 * User can log in or sign up
 * User can view information on parking spaces
+* User can favorite a parking space
 
 **Optional Nice-to-have Stories**
 
