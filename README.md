@@ -14,7 +14,6 @@ Original App Design Project - README Template
 The app shows users nearby parking options, and displays information to the user.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Map display, Location
 - **Mobile:** Interactive, displays a map with pins
 - **Story:** Allows users to see nearby parking according to their location. 
@@ -29,6 +28,7 @@ The app shows users nearby parking options, and displays information to the user
 **Required Must-have Stories**
 
 * User can view a map and interact with a map
+* User can log in or sign up
 * User can view information on parking spaces
 
 **Optional Nice-to-have Stories**
@@ -37,24 +37,31 @@ The app shows users nearby parking options, and displays information to the user
 
 ### 2. Screen Archetypes
 
+* Launch Screen
+   * User sees launch screen with app name and logo
 * Map Display Screen
    * User can view a map and interact with a map
-* Parking Space Information
+* Log-In/Sign-Up Screen
+   * User can log in or sign up 
+* Parking Details Screen
    * User can view information on parking spaces
+* Profile Screen
+   * User can view their favorited parking spaces
+   * User can log out
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
+* Map Display
+* Profile Screen
 * [fill out your third tab]
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
+* Log-In Screen
+   * Parking Details Screen for specific location
+   * 
 * [list second screen here]
    * [list screen navigation here]
    * ...
