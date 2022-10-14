@@ -72,9 +72,9 @@ The app shows users nearby parking options, and displays information to the user
 
 ### [BONUS] Digital Wireframes & Mockups
 * Launch Screen and Discover Screen
-![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Launch%20and%20Discover%20Screen%20Wireframe.HEIC)
+![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Launch_and_Discover_Screen_Wireframe.jpg)
 * Profile Details Screen 
-![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Profile%20Screen%20Wireframe.HEIC)
+![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Profile_Screen_Wireframe.jpg)
 * Parking Details Screen
 ![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Parking%20Details%20Screen%20Wireframe.JPG)
 
