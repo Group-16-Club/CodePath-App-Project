@@ -59,6 +59,8 @@ The app shows users nearby parking options, and displays information to the user
 
 **Flow Navigation** (Screen to Screen)
 
+* Launch Screen
+  * Log-In Screen
 * Log-In Screen
    * Map Display
 * Map Display
