@@ -60,11 +60,13 @@ The app shows users nearby parking options, and displays information to the user
 **Flow Navigation** (Screen to Screen)
 
 * Log-In Screen
-   * 
-   * 
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+   * Map Display
+* Map Display
+   * Parking Details
+   * Profile
+* Profile
+   * Parking Details
+* Parking Details
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
