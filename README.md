@@ -60,7 +60,7 @@ The app shows users nearby parking options, and displays information to the user
 **Flow Navigation** (Screen to Screen)
 
 * Log-In Screen
-   * Parking Details Screen for specific location
+   * 
    * 
 * [list second screen here]
    * [list screen navigation here]
@@ -71,12 +71,6 @@ The app shows users nearby parking options, and displays information to the user
 <img src="https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Launch_and_Discover_Screen_Wireframe.jpg" width=600>
 <img src="https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Profile_Screen_Wireframe.jpg" width=600>
 <img src="https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Parking%20Details%20Screen%20Wireframe.JPG" width=600>
-<!-- * Launch Screen and Discover Screen
-![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Launch_and_Discover_Screen_Wireframe.jpg)
-* Profile Details Screen
-![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Profile_Screen_Wireframe.jpg)
-* Parking Details Screen
-![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Parking%20Details%20Screen%20Wireframe.JPG) -->
 
 ### [BONUS] Digital Wireframes & Mockups
 
