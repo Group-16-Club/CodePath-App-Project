@@ -15,7 +15,7 @@ The app shows users nearby parking options, and displays information to the user
 
 ### App Evaluation
 - **Category:** Map display, Location
-- **Mobile:** Interactive, displays a map with pins
+- **Mobile:** This app would be primarily developed for mobile.
 - **Story:** Allows users to see nearby parking according to their location. 
 - **Market:** Anyone who uses a car, bike, or motorcycle can find use for this app. Especially those in cities that lack parking.
 - **Habit:** Users can often check the app whenever they need parking, especially if they travel a lot throughout the day.
