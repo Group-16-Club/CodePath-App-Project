@@ -54,9 +54,8 @@ The app shows users nearby parking options, and displays information to the user
 
 **Tab Navigation** (Tab to Screen)
 
-* Map Display
-* Profile Screen
-* [fill out your third tab]
+* Map Display (Discover)
+* User Profile (Me)
 
 **Flow Navigation** (Screen to Screen)
 
@@ -72,6 +71,12 @@ The app shows users nearby parking options, and displays information to the user
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
+* Launch Screen and Discover Screen
+![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Launch%20and%20Discover%20Screen%20Wireframe.HEIC)
+* Profile Details Screen 
+![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Profile%20Screen%20Wireframe.HEIC)
+* Parking Details Screen
+![](https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Parking%20Details%20Screen%20Wireframe.JPG)
 
 ### [BONUS] Interactive Prototype
 
