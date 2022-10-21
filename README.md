@@ -129,7 +129,7 @@ Reviews
 
 
 - [Create basic snippets for each Parse network request]
-```
+```swift
 //(Read/GET) Query logged in user object
 let user=PFUser.current()!
         
