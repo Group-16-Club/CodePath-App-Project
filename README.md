@@ -116,6 +116,17 @@ Reviews
 |text|String|the body of the review|
 
 ### Networking
-- [Add list of network requests by screen ]
+*Log-In Screen
+  *(Read/GET) Query user object -> for logging in
+  *(Create/POST) Create user object and add to data base -> for signing up
+*Profile Screen
+  *(Read/GET) Query logged in user object
+  *(Update/PUT) Update user profile image
+*Parking Details Screen
+  *(Update/PUT) Update favorite status
+  *(Create/POST) Create a new review post object
+  *(Read/GET) Query all review objects
+
+
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
