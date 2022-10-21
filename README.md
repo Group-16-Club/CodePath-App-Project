@@ -129,7 +129,22 @@ Reviews
 
 
 - [Create basic snippets for each Parse network request]
-
+```
+//(Read/GET) Query logged in user object
+let user=PFUser.current()!
+        
+//(Update/PUT) Update user profile image
+let user=PFUser.current()!
+let imageData=pictureView.image!.pngData()
+let file = PFFileObject(name: "profilePicture.png", data: imageData!)
+user["picture"]=file //this column has link to that table
+user.saveInBackground{(success,error) in
+	if success{
+		print("Successfully uploaded profile image")
+  }else{
+    print(error.localizedDescription)
+}
+```
 
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
