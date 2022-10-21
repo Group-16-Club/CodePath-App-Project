@@ -88,10 +88,33 @@ Parking Details
 |Property   |Type   |Description            |
 |-----------|-------|-----------------------|
 |name       |String |name of parking lot    |
-|address    |JSON object| address where the parking lot is located|
+|address    |JSON object|address where the parking lot is located|
+|numOfAvailabeSpaces|Number|number of available spots|
+|rateDetails|Array of Strings|a list of information regarding price rates|
+|typeOfParking|String|the type of parking lot|
+|timingDetails|Array of Strings|a list of information regarding hours of operation|
+|isOpen|Boolean|an indication of whether the parking lot is currently open|
+|reviews|Array of Review Objects|list of reviews of the parking space given by users|
+
 User
+|Property   |Type   |Description            |
+|-----------|-------|-----------------------|
+|name|String|user’s first and last name|
+|username|String|user’s chosen username|
+|email|String|user’s registered email|
+|password|String|user’s chosen password|
+|savedParkingLocations|Array of Parking Details Objects|a list of parking locations favorited by the user|
+|review|Array of Review Objects|an array of reviews composed by the user| 
+|profilePic|image|a profile picture chosen by user|
 
 Reviews
+|Property   |Type   |Description            |
+|-----------|-------|-----------------------|
+|author|string|the user who wrote the review|
+|timePosted| DateTime|the date and time the review was posted by the user|
+|rating|Integer|an integer between 1-5 given as rating by the user|
+|text|String|the body of the review|
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
