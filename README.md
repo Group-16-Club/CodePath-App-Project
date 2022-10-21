@@ -133,6 +133,7 @@ Reviews
 
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
 Base URL - https://api.spothero.com/v2
 
 |HTTP Verb   |Endpoint   |Description            |
