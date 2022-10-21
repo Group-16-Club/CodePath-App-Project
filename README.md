@@ -84,7 +84,14 @@ The app shows users nearby parking options, and displays information to the user
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+Parking Details
+|Property   |Type   |Description            |
+|-----------|-------|-----------------------|
+|name       |String |name of parking lot    |
+|address    |JSON object| address where the parking lot is located|
+User
+
+Reviews
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
