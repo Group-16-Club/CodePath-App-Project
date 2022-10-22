@@ -130,7 +130,7 @@ Reviews
 
 ```swift
 //(Read/GET) Query logged in user object
-let user=PFUser.current()!
+let user = PFUser.current()!
         
 //(Update/PUT) Update user profile image
 let user = PFUser.current()!
@@ -160,7 +160,7 @@ PFUser.logInWithUsername(inBackground: username, password: password) { (user,err
 ```swift
 // update favorite status
 let user = PFUser.current()!
-let query = PFQuery(className:"parkingSpot")
+let query = PFQuery(className: "parkingSpot")
 let parkingDetails = query.getObjectInBackground(withId: "____")
 // makes sure parking spot has not already been added
 user.addUnique(parkingDetails, forKey: "savedParkingLocations")
@@ -187,7 +187,7 @@ selectedParkingDetails.saveInBackground { (success, error) in
 }
 
 // query all review post objects
-let query = PFQuery(className:"Reviews")
+let query = PFQuery(className: "Reviews")
 query.includeKeys(["author", "text", "rating"])
 query.limit = 10
 query.findObjectsInBackground{ (posts, error) in
