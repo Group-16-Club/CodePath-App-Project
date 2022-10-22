@@ -145,6 +145,19 @@ user.saveInBackground{(success,error) in
     print(error.localizedDescription)
 }
 ```
+```swift
+// usernameField and passwordField are two textField outlets
+let username = usernameField.text!
+let password = passwordField.text!
+        
+PFUser.logInWithUsername(inBackground: username, password: password) { (user,error) in
+	if user != nil{
+        	// perform action
+        } else{
+        	print("Error \(error?.localizedDescription)")
+        }
+}
+```
 
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
