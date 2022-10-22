@@ -128,16 +128,15 @@ Reviews
   * (Read/GET) Query all review objects
 
 
-- [Create basic snippets for each Parse network request]
 ```swift
 //(Read/GET) Query logged in user object
 let user=PFUser.current()!
         
 //(Update/PUT) Update user profile image
-let user=PFUser.current()!
-let imageData=pictureView.image!.pngData()
+let user = PFUser.current()!
+let imageData = pictureView.image!.pngData()
 let file = PFFileObject(name: "profilePicture.png", data: imageData!)
-user["picture"]=file //this column has link to that table
+user["picture"] = file //this column has link to that table
 user.saveInBackground{(success,error) in
 	if success{
 		print("Successfully uploaded profile image")
@@ -158,6 +157,47 @@ PFUser.logInWithUsername(inBackground: username, password: password) { (user,err
         }
 }
 ```
+```swift
+// update favorite status
+let user = PFUser.current()!
+let query = PFQuery(className:"parkingSpot")
+let parkingDetails = query.getObjectInBackground(withId: "____")
+// makes sure parking spot has not already been added
+user.addUnique(parkingDetails, forKey: "savedParkingLocations")
+user.saveInBackground { (success, error) in
+	if success {
+		print("parking location successfully added.")
+        } else {
+        	print("error adding parking location.")
+        }
+
+// create new review object
+let review = PFObject(className: "Reviews")
+        review["text"] = text
+        review["parkingSpot"] = selectedParkingDetails
+        review["author"] = PFUser.current()!
+	review["rating"] = number
+selectedParkingDetails.add(review, forKey: "Reviews")
+selectedParkingDetails.saveInBackground { (success, error) in
+	if success {
+		print("review successfully saved.")
+        } else {
+        	print("error saving review.")
+        }
+}
+
+// query all review post objects
+let query = PFQuery(className:"Reviews")
+query.includeKeys(["author", "text", "rating"])
+query.limit = 10
+query.findObjectsInBackground{ (posts, error) in
+	if posts != nil {
+        	self.reviews = reviews!
+                // load reviews onto parking details screen
+        }
+}
+```
+
 
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
