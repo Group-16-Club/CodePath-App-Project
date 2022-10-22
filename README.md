@@ -190,8 +190,8 @@ selectedParkingDetails.saveInBackground { (success, error) in
 let query = PFQuery(className: "Reviews")
 query.includeKeys(["author", "text", "rating"])
 query.limit = 10
-query.findObjectsInBackground{ (posts, error) in
-	if posts != nil {
+query.findObjectsInBackground{ (reviews, error) in
+	if reviews != nil {
         	self.reviews = reviews!
                 // load reviews onto parking details screen
         }
