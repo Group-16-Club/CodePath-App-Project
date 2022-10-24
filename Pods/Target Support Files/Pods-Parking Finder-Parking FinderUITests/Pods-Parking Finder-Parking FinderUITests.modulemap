@@ -1,0 +1,6 @@
+framework module Pods_Parking_Finder_Parking_FinderUITests {
+  umbrella header "Pods-Parking Finder-Parking FinderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
