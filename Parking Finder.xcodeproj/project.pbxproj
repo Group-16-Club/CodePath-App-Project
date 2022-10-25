@@ -22,6 +22,7 @@
 		417F52350B1D44FB8ACB6BD2 /* Pods_Parking_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409BA5346919385859ABC2A6 /* Pods_Parking_Finder.framework */; };
 		4615A61677D730A1A0AC2739 /* Pods_Parking_FinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E959AECF274B74338DD8E3 /* Pods_Parking_FinderTests.framework */; };
 		5D3015C54C81A2954B0C243B /* Pods_Parking_Finder_Parking_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8283C6B842A0E3AD8AF92A59 /* Pods_Parking_Finder_Parking_FinderUITests.framework */; };
+		8E4A3DE0290845A100F51B3C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A3DDF290845A100F51B3C /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		8283C6B842A0E3AD8AF92A59 /* Pods_Parking_Finder_Parking_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Finder_Parking_FinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB181E0C847D51C45A97A8 /* Pods-Parking Finder-Parking FinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Finder-Parking FinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parking Finder-Parking FinderUITests/Pods-Parking Finder-Parking FinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		89E959AECF274B74338DD8E3 /* Pods_Parking_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_FinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4A3DDF290845A100F51B3C /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		D96ECBFD94D631B61822BDBE /* Pods-Parking FinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking FinderTests.debug.xcconfig"; path = "Target Support Files/Pods-Parking FinderTests/Pods-Parking FinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DEC18A3506F5FD4997ABD906 /* Pods-Parking FinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking FinderTests.release.xcconfig"; path = "Target Support Files/Pods-Parking FinderTests/Pods-Parking FinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		E3AE71F2A094788A3C0018BB /* Pods-Parking Finder-Parking FinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Finder-Parking FinderUITests.release.xcconfig"; path = "Target Support Files/Pods-Parking Finder-Parking FinderUITests/Pods-Parking Finder-Parking FinderUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				1DDC265C2907561F00640963 /* LogInViewController.swift */,
 				1DD723C629046F4A00CAFC8D /* AppDelegate.swift */,
+				8E4A3DDF290845A100F51B3C /* EditProfileViewController.swift */,
 				1DD723C829046F4A00CAFC8D /* SceneDelegate.swift */,
 				1DD723CA29046F4A00CAFC8D /* ViewController.swift */,
 				1DD723CC29046F4A00CAFC8D /* Main.storyboard */,
@@ -421,6 +424,7 @@
 				1DD723C729046F4A00CAFC8D /* AppDelegate.swift in Sources */,
 				1DDC265F290756A900640963 /* MapDisplayViewController.swift in Sources */,
 				1DD723C929046F4A00CAFC8D /* SceneDelegate.swift in Sources */,
+				8E4A3DE0290845A100F51B3C /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
