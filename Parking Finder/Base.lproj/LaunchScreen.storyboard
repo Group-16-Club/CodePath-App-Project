@@ -16,13 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="logo-placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="igi-2E-lp1">
-                                <rect key="frame" x="30" y="266" width="354" height="365"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Parking Finder Logo" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-g8-hrc">
+                                <rect key="frame" x="-3" y="238" width="420" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="420" id="2us-tU-0Kw"/>
+                                    <constraint firstAttribute="height" constant="420" id="vFn-tp-GfD"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vjx-g8-hrc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eDx-XV-1t1"/>
+                            <constraint firstItem="vjx-g8-hrc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="upm-ie-Jpx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -31,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-placeholder-image" width="512" height="512"/>
+        <image name="Parking Finder Logo" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

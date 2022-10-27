@@ -159,7 +159,7 @@
                             <constraint firstItem="yQP-hs-Yj1" firstAttribute="centerX" secondItem="9ZM-e2-ocz" secondAttribute="centerX" id="qQa-9k-uEQ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Me" id="imQ-5T-zzF"/>
+                    <tabBarItem key="tabBarItem" title="Me" image=" me-tabbar" id="imQ-5T-zzF"/>
                     <connections>
                         <outlet property="editButton" destination="zJ6-u0-3Qd" id="P8n-2N-xdP"/>
                         <outlet property="pictureView" destination="yQP-hs-Yj1" id="oSM-JC-VZL"/>
@@ -239,9 +239,8 @@
         <!--Discover-->
         <scene sceneID="0D5-6x-AC3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4HV-G6-4gd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="1Un-fE-UuP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" id="zFA-No-4y6"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="map-tabbar" id="zFA-No-4y6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6t9-eB-T5w">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -252,15 +251,18 @@
                         <segue destination="7tT-Fi-vhb" kind="relationship" relationship="rootViewController" id="YCS-2p-ZsF"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4HV-G6-4gd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="809" y="92"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0kh-fR-hz3"/>
+        <segue reference="qqe-zA-ZDV"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name=" me-tabbar" width="22" height="22"/>
         <image name="image_placeholder" width="375" height="375"/>
+        <image name="map-tabbar" width="22" height="22"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
