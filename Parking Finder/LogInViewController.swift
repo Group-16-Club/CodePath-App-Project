@@ -2,13 +2,18 @@
 //  LogInViewController.swift
 //  Parking Finder
 //
-//  Created by Trish Truong on 10/24/22.
+//  Created by Sarah Al-Towaity on 26/10/2022.
 //
 
 import UIKit
+import Parse
 
-class LogInViewController: UIViewController {
+class LoginViewController: UIViewController {
 
+    
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +30,34 @@ class LogInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func onSignIn(_ sender: Any) {
+        let username = usernameField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user,error) in
+            if user != nil{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else{
+                print("Error \(error?.localizedDescription)")
+            }
+            
+        }
+    }
+    @IBAction func onSignUp(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        
+        user.signUpInBackground { (success, error) in
+            if success{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else{
+                print("Error \(error?.localizedDescription)")
+            }
+            
+        }
+    }
+    
 }

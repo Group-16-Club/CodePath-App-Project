@@ -16,12 +16,12 @@
 		1DD723DE29046F4C00CAFC8D /* Parking_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD723DD29046F4C00CAFC8D /* Parking_FinderTests.swift */; };
 		1DD723E829046F4C00CAFC8D /* Parking_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD723E729046F4C00CAFC8D /* Parking_FinderUITests.swift */; };
 		1DD723EA29046F4C00CAFC8D /* Parking_FinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD723E929046F4C00CAFC8D /* Parking_FinderUITestsLaunchTests.swift */; };
-		1DDC265D2907561F00640963 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC265C2907561F00640963 /* LogInViewController.swift */; };
 		1DDC265F290756A900640963 /* MapDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC265E290756A900640963 /* MapDisplayViewController.swift */; };
 		1DDC26612907575D00640963 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC26602907575D00640963 /* ProfileViewController.swift */; };
 		417F52350B1D44FB8ACB6BD2 /* Pods_Parking_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409BA5346919385859ABC2A6 /* Pods_Parking_Finder.framework */; };
 		4615A61677D730A1A0AC2739 /* Pods_Parking_FinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E959AECF274B74338DD8E3 /* Pods_Parking_FinderTests.framework */; };
 		5D3015C54C81A2954B0C243B /* Pods_Parking_Finder_Parking_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8283C6B842A0E3AD8AF92A59 /* Pods_Parking_Finder_Parking_FinderUITests.framework */; };
+		6A4BD55F290A24D80099D117 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4BD55E290A24D80099D117 /* LogInViewController.swift */; };
 		8E4A3DE0290845A100F51B3C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A3DDF290845A100F51B3C /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,11 +57,11 @@
 		1DD723E329046F4C00CAFC8D /* Parking FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parking FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD723E729046F4C00CAFC8D /* Parking_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_FinderUITests.swift; sourceTree = "<group>"; };
 		1DD723E929046F4C00CAFC8D /* Parking_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_FinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1DDC265C2907561F00640963 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		1DDC265E290756A900640963 /* MapDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDisplayViewController.swift; sourceTree = "<group>"; };
 		1DDC26602907575D00640963 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		409BA5346919385859ABC2A6 /* Pods_Parking_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C37DE4CEA567706090278DB /* Pods-Parking Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Finder.debug.xcconfig"; path = "Target Support Files/Pods-Parking Finder/Pods-Parking Finder.debug.xcconfig"; sourceTree = "<group>"; };
+		6A4BD55E290A24D80099D117 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		8283C6B842A0E3AD8AF92A59 /* Pods_Parking_Finder_Parking_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Finder_Parking_FinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB181E0C847D51C45A97A8 /* Pods-Parking Finder-Parking FinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Finder-Parking FinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parking Finder-Parking FinderUITests/Pods-Parking Finder-Parking FinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		89E959AECF274B74338DD8E3 /* Pods_Parking_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_FinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,12 +137,12 @@
 		1DD723C529046F4A00CAFC8D /* Parking Finder */ = {
 			isa = PBXGroup;
 			children = (
-				1DDC265C2907561F00640963 /* LogInViewController.swift */,
 				1DD723C629046F4A00CAFC8D /* AppDelegate.swift */,
 				8E4A3DDF290845A100F51B3C /* EditProfileViewController.swift */,
 				1DD723C829046F4A00CAFC8D /* SceneDelegate.swift */,
 				1DD723CA29046F4A00CAFC8D /* ViewController.swift */,
 				1DD723CC29046F4A00CAFC8D /* Main.storyboard */,
+				6A4BD55E290A24D80099D117 /* LogInViewController.swift */,
 				1DD723CF29046F4C00CAFC8D /* Assets.xcassets */,
 				1DD723D129046F4C00CAFC8D /* LaunchScreen.storyboard */,
 				1DD723D429046F4C00CAFC8D /* Info.plist */,
@@ -419,9 +419,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DDC26612907575D00640963 /* ProfileViewController.swift in Sources */,
-				1DDC265D2907561F00640963 /* LogInViewController.swift in Sources */,
 				1DD723CB29046F4A00CAFC8D /* ViewController.swift in Sources */,
 				1DD723C729046F4A00CAFC8D /* AppDelegate.swift in Sources */,
+				6A4BD55F290A24D80099D117 /* LogInViewController.swift in Sources */,
 				1DDC265F290756A900640963 /* MapDisplayViewController.swift in Sources */,
 				1DD723C929046F4A00CAFC8D /* SceneDelegate.swift in Sources */,
 				8E4A3DE0290845A100F51B3C /* EditProfileViewController.swift in Sources */,
