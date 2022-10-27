@@ -8,17 +8,47 @@
 import UIKit
 import Parse
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var pictureView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var editButton: UIButton!
+    
+    var numberOfSaved:Int!
+    var savedArray = [PFObject]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         editButton.layer.cornerRadius=10
         editButton.layer.borderWidth=1
         editButton.layer.borderColor=CGColor(red: 105/255, green: 105/255, blue: 105/255, alpha: 1)
+        pictureView.layer.cornerRadius=pictureView.frame.size.width/2
+        pictureView.layer.masksToBounds=true
+        tableView.delegate=self
+        tableView.dataSource=self
+        getUserinfo()
+        loadSaved()
         
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getPicture(PFUser.current()!)
+    }
+    
+    func getUserinfo(){
+        let user=PFUser.current()!
+        usernameLabel.text=user.username
+        getPicture(user)
+   
+    }
+    func getPicture(_ user:PFUser){
+        if (user["profileImage"] != nil){
+            let imageFile=user["profileImage"] as! PFFileObject
+            let urlString=imageFile.url!
+            let url=URL(string: urlString)!
+            pictureView.af.setImage(withURL: url)
+        }
     }
     
     @IBAction func onLogout(_ sender: Any) {
@@ -30,14 +60,24 @@ class ProfileViewController: UIViewController {
         delegate.window?.rootViewController=loginViewController
     }
     
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //table view
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return savedArray.count
     }
-    */
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell=tableView.dequeueReusableCell(withIdentifier: "SavedParkingCell") as! SavedParkingCell
+        let savedParking=savedArray[indexPath.row]
+        cell.locationLabel.text=(savedParking["location"] as! String) ?? "Test"
+        
+        return cell
+    }
+    
+    func loadSaved(){
+        numberOfSaved=5
+        let user=PFUser.current()!
+        savedArray=(user["savedParking"] as? [PFObject]) ?? []
+        tableView.reloadData()
+    }
 
 }

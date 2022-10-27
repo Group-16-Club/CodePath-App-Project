@@ -11,10 +11,13 @@ import AlamofireImage
 
 class EditProfileViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var pictureView: UIImageView!
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //getPicture(PFUser.current()!)
+        
+        getPicture(PFUser.current()!)
+        
     }
     @IBAction func onTap(_ sender: Any) {
         
@@ -36,7 +39,7 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
         let user=PFUser.current()!
         let imageData=pictureView.image!.pngData()
         let file = PFFileObject(name: "profilePicture.png", data: imageData!)
-        user["picture"]=file
+        user["profileImage"]=file
         user.saveInBackground{(success,error) in
             if success{
                 self.dismiss(animated: true, completion: nil)
@@ -47,8 +50,8 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
     }
     
     func getPicture(_ user:PFUser){
-        if (user["picture"] != nil){
-            let imageFile=user["picture"] as! PFFileObject
+        if (user["profileImage"] != nil){
+            let imageFile=user["profileImage"] as! PFFileObject
             let urlString=imageFile.url!
             let url=URL(string: urlString)!
             pictureView.af.setImage(withURL: url)
@@ -62,5 +65,6 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
         pictureView.image=scaledImage
         dismiss(animated: true, completion:nil)
     }
+    
     
 }
