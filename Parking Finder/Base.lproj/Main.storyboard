@@ -232,9 +232,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSr-bo-Vgx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSr-bo-Vgx">
                                 <rect key="frame" x="86" y="331" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -276,9 +275,24 @@
                                     <action selector="onSignUp:" destination="iLV-87-YDR" eventType="touchUpInside" id="0Vm-Jx-AfF"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="In-App Logo" translatesAutoresizingMaskIntoConstraints="NO" id="uLU-EF-Vzf">
+                                <rect key="frame" x="7" y="181" width="400" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="Ghb-EI-J21"/>
+                                    <constraint firstAttribute="height" constant="106" id="I1c-br-C6P"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uOI-bD-Snn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uLU-EF-Vzf" firstAttribute="centerX" secondItem="IRY-Ps-aop" secondAttribute="centerX" id="1Nc-yH-gpu"/>
+                            <constraint firstItem="uLU-EF-Vzf" firstAttribute="top" secondItem="uOI-bD-Snn" secondAttribute="top" constant="137" id="KnL-T4-8eM"/>
+                            <constraint firstItem="uOI-bD-Snn" firstAttribute="trailing" secondItem="uLU-EF-Vzf" secondAttribute="trailing" constant="7" id="RgX-40-lTK"/>
+                            <constraint firstItem="HSr-bo-Vgx" firstAttribute="top" secondItem="uLU-EF-Vzf" secondAttribute="bottom" constant="44" id="XTP-Ya-F8d"/>
+                            <constraint firstItem="HSr-bo-Vgx" firstAttribute="leading" secondItem="uOI-bD-Snn" secondAttribute="leading" constant="86" id="ovA-cs-HwB"/>
+                            <constraint firstItem="uLU-EF-Vzf" firstAttribute="leading" secondItem="uOI-bD-Snn" secondAttribute="leading" constant="7" id="xIP-ye-cOY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="passwordField" destination="zLI-yI-tVL" id="z1l-bx-5YP"/>
@@ -312,6 +326,7 @@
     </scenes>
     <resources>
         <image name=" me-tabbar" width="22" height="22"/>
+        <image name="In-App Logo" width="430" height="126"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="map-tabbar" width="22" height="22"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
