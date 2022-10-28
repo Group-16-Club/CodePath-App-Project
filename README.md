@@ -215,4 +215,4 @@ Base URL - https://api.spothero.com/v2
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/0nc1xZy0AJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/RbENxNEycu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
