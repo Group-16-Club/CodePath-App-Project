@@ -210,3 +210,9 @@ Base URL - https://api.spothero.com/v2
 |------------|-----------|-----------------------|
 |GET|/facilities/{facility_id}|Gets detailed information about a given facility|
 |GET|/facilities|Gets summaries of multiple facilities within a specified distance|
+
+### Sprint 1 - Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/0nc1xZy0AJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
