@@ -28,9 +28,9 @@ The app shows users nearby parking options, and displays information to the user
 **Required Must-have Stories**
 
 - [ ] User can view a map and interact with a map
-- [ ] User can log in or sign up
+- [x] User can log in or sign up
 - [ ] User can view information on parking spaces
-- [ ] User can change their profile picture
+- [x] User can change their profile picture
 - [ ] User can favorite a parking space
 - [ ] User can access the detailed parking information from their profile screen
 
