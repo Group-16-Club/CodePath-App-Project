@@ -12,17 +12,37 @@
         <scene sceneID="1N2-zV-4CW">
             <objects>
                 <viewController title="MapDisplayViewController" id="7tT-Fi-vhb" customClass="MapDisplayViewController" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="58c-87-cqG">
+                    <view key="view" contentMode="scaleToFill" id="HRq-QT-8Jh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="x9q-mD-tDD"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="In-App Logo" translatesAutoresizingMaskIntoConstraints="NO" id="eJZ-bS-9Ue">
+                                <rect key="frame" x="29" y="88" width="140" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gB-nl-9mU">
+                                <rect key="frame" x="188" y="101" width="200" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIz-ns-r8D">
+                                <rect key="frame" x="29" y="169" width="359" height="599"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m6u-uQ-4rg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bvn-aB-RZZ"/>
+                    <connections>
+                        <outlet property="mapView" destination="LIz-ns-r8D" id="gNw-af-lLq"/>
+                        <outlet property="searchTextField" destination="9gB-nl-9mU" id="XYR-yw-KDx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVM-ex-JM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="830"/>
+            <point key="canvasLocation" x="808.69565217391312" y="829.6875"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="Aiu-vs-WDJ">
