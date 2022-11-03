@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapDisplayViewController: UIViewController, CLLocationManagerDelegate {
+class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet var mapView: MKMapView!
@@ -32,8 +32,8 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate {
         var currentLoc: CLLocation!
         if(CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways) {
                  currentLoc = locationManager.location
-                 latitude=currentLoc.coordinate.latitude
-                 longitude=currentLoc.coordinate.longitude
+            latitude=currentLoc.coordinate.latitude
+            longitude=currentLoc.coordinate.longitude
         }
         /*
         // Make API call
@@ -64,7 +64,11 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate {
             let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             mapView.setRegion(region, animated: false)
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            mapView.addAnnotation(annotation)
         }
+        
     }
 
     /*
