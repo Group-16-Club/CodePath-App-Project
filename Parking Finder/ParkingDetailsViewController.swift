@@ -9,6 +9,16 @@ import UIKit
 
 class ParkingDetailsViewController: UIViewController {
 
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var hoursText: UILabel!
+    @IBOutlet weak var ratesText: UITextView!
+    @IBOutlet weak var isOpenLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    
+    @IBOutlet weak var favoriteButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
