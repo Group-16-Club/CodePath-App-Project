@@ -216,3 +216,8 @@ Base URL - https://api.spothero.com/v2
 Here's a walkthrough of implemented user stories:
 
 <img src='http://g.recordit.co/RbENxNEycu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Sprint 2 - Video Walkthrough
+
+<img src='https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Sprint%202%20Walkthrough.gif' title='Sprint 2 Video Walkthrough' width='' alt='Sprint 2 Video Walkthrough' />
+
