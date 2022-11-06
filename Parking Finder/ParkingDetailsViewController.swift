@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class ParkingDetailsViewController: UIViewController {
 
@@ -25,7 +26,28 @@ class ParkingDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    var favorited:Bool = false
+    func setFavorite(_ isFavorited:Bool) {
+        favorited = isFavorited
+        // let user = PFUser.current()!
+        // let query = PFQuery(className: "parkingSpot")
+        // let parkingDetails = query.getObjectInBackground(withId: )
+        if (favorited) {
+            favoriteButton.setImage(UIImage(named:"favor-icon"), for: UIControl.State.normal)
+        } else {
+            favoriteButton.setImage(UIImage(named:"unfavor-icon"), for: UIControl.State.normal)
+        }
+    }
+    
+    @IBAction func favoriteParking(_ sender: Any) {
+        let toBeFavorited = !favorited
+        if (toBeFavorited) {
+            self.setFavorite(true)
+            
+        } else {
+            self.setFavorite(false)
+        }
+    }
     /*
     // MARK: - Navigation
 
