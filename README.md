@@ -27,12 +27,12 @@ The app shows users nearby parking options, and displays information to the user
 
 **Required Must-have Stories**
 
-- [ ] User can view a map and interact with a map
+- [x] User can view a map and interact with a map
 - [x] User can log in or sign up
 - [ ] User can view information on parking spaces
 - [x] User can change their profile picture
 - [ ] User can favorite a parking space
-- [ ] User can access the detailed parking information from their profile screen
+- [x] User can access the detailed parking information from their profile screen
 
 **Optional Nice-to-have Stories**
 
@@ -216,3 +216,8 @@ Base URL - https://api.spothero.com/v2
 Here's a walkthrough of implemented user stories:
 
 <img src='http://g.recordit.co/RbENxNEycu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Sprint 2 - Video Walkthrough
+
+<img src='https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Sprint%202%20Walkthrough.gif' title='Sprint 2 Video Walkthrough' width='' alt='Sprint 2 Video Walkthrough' />
+

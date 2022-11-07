@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DBCA6D12913408D00C69D98 /* ParkingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBCA6D02913408D00C69D98 /* ParkingDetailsViewController.swift */; };
 		1DD723C729046F4A00CAFC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD723C629046F4A00CAFC8D /* AppDelegate.swift */; };
 		1DD723C929046F4A00CAFC8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD723C829046F4A00CAFC8D /* SceneDelegate.swift */; };
 		1DD723CB29046F4A00CAFC8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD723CA29046F4A00CAFC8D /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		1456C5A841F879FD9E91C6C7 /* Pods-Parking Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Finder.release.xcconfig"; path = "Target Support Files/Pods-Parking Finder/Pods-Parking Finder.release.xcconfig"; sourceTree = "<group>"; };
+		1DBCA6D02913408D00C69D98 /* ParkingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailsViewController.swift; sourceTree = "<group>"; };
 		1DD723C329046F4A00CAFC8D /* Parking Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD723C629046F4A00CAFC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DD723C829046F4A00CAFC8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				1DDC265E290756A900640963 /* MapDisplayViewController.swift */,
 				1DDC26602907575D00640963 /* ProfileViewController.swift */,
 				8E04E986290AE3460090B559 /* SavedParkingCell.swift */,
+				1DBCA6D02913408D00C69D98 /* ParkingDetailsViewController.swift */,
 			);
 			path = "Parking Finder";
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				6A4BD55F290A24D80099D117 /* LogInViewController.swift in Sources */,
 				1DDC265F290756A900640963 /* MapDisplayViewController.swift in Sources */,
 				1DD723C929046F4A00CAFC8D /* SceneDelegate.swift in Sources */,
+				1DBCA6D12913408D00C69D98 /* ParkingDetailsViewController.swift in Sources */,
 				8E4A3DE0290845A100F51B3C /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

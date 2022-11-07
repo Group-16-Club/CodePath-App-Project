@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FCCD077C-C633-45C0-837F-67036CA96A5F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFDDD534-BAEC-4DCE-A128-64AD51777B6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Parking Finder/MapDisplayViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "DFDDD534-BAEC-4DCE-A128-64AD51777B6D - c8513ee2744666da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Parking_Finder.MapDisplayViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Parking_Finder.MapDisplayViewController"
+                  moduleName = "Parking Finder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarah.altowaity/Documents/code_path/CodePath-App-Project/Parking%20Finder/MapDisplayViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "DFDDD534-BAEC-4DCE-A128-64AD51777B6D - b6848d551591f82d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Parking_Finder.MapDisplayViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Parking_Finder.MapDisplayViewController"
+                  moduleName = "Parking Finder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarah.altowaity/Documents/code_path/CodePath-App-Project/Parking%20Finder/MapDisplayViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "177">
+               </Location>
+               <Location
+                  uuid = "DFDDD534-BAEC-4DCE-A128-64AD51777B6D - c158aef919f3b656"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Parking_Finder.MapDisplayViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Parking_Finder.MapDisplayViewController&gt;"
+                  moduleName = "Parking Finder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarah.altowaity/Documents/code_path/CodePath-App-Project/Parking%20Finder/MapDisplayViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "DFDDD534-BAEC-4DCE-A128-64AD51777B6D - fe542fa37be60665"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Parking_Finder.MapDisplayViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Parking_Finder.MapDisplayViewController&gt;"
+                  moduleName = "Parking Finder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarah.altowaity/Documents/code_path/CodePath-App-Project/Parking%20Finder/MapDisplayViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "134">
+               </Location>
+               <Location
+                  uuid = "DFDDD534-BAEC-4DCE-A128-64AD51777B6D - 5fe101b35f0b7fc3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Parking_Finder.MapDisplayViewController.__deallocating_deinit"
+                  moduleName = "Parking Finder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarah.altowaity/Documents/code_path/CodePath-App-Project/Parking%20Finder/MapDisplayViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CE0E9FE-2A56-4D80-B342-E72D4D72A11B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Parking Finder/MapDisplayViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
