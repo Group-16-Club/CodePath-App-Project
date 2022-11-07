@@ -29,12 +29,13 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
         locationManager.requestWhenInUseAuthorization()
         
         // Get current longitude and latitude
+        /*
         var currentLoc: CLLocation!
         if(CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways) {
                  currentLoc = locationManager.location
             latitude=currentLoc.coordinate.latitude
             longitude=currentLoc.coordinate.longitude
-        }
+        }*/
         /*
         // Make API call
         let url = URL(string: "https://api.parkme.com/lots?accesstoken=\(token)&point=\(latitude)|\(longitude)&radius=75&locale=en-US")!
