@@ -62,11 +62,12 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
+            let default_location = CLLocationCoordinate2D(latitude: 40.7812, longitude:-73.9665)
             let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+            let region = MKCoordinateRegion(center: default_location , span: span)
             mapView.setRegion(region, animated: false)
             let annotation = MKPointAnnotation()
-            annotation.coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            annotation.coordinate = CLLocationCoordinate2D(latitude: default_location.latitude, longitude: default_location.longitude)
             mapView.addAnnotation(annotation)
         }
         
