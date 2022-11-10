@@ -72,14 +72,11 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // app id: sk646zkhc2
+    // app key: OyJGs95epm5nFQdcjUYaD54Gl3XAB9Tx2FduPzwH
+    // hash token: c2s2NDZ6a2hjMnxPeUpHczk1ZXBtNW5GUWRjalVZYUQ1NEdsM1hBQjlUeDJGZHVQendI
+    // expiration date: 2022-11-24T23:23:34.5Z
+    
+    
 
 }
