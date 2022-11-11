@@ -18,6 +18,8 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
     var latitude:Double!
     var token:String!
     var parkingLots:[[String:Any]]!
+    var selectedAnnotation: MKPointAnnotation?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +73,7 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
                 annotation.coordinate = item.placemark.coordinate
                 annotation.title = item.name
                 annotation.subtitle = item.phoneNumber
+                
                 self.mapView.addAnnotation(annotation)
             }
         }
@@ -91,9 +94,30 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
             mapView.setRegion(region, animated: false)
             let annotation = MKPointAnnotation()
             annotation.coordinate = CLLocationCoordinate2D(latitude: default_location.latitude, longitude: default_location.longitude)
+            
             mapView.addAnnotation(annotation)
         }
         
+    }
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotation = view.annotation {
+            if let title = annotation.title! {
+                print("Tapped \(title) pin")
+                //you can add whatever data you want in sender:()
+                self.selectedAnnotation=view.annotation as? MKPointAnnotation
+                performSegue(withIdentifier: "ParkingDetails", sender: self)
+                
+            }
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ParkingDetails"{
+            let destVC=segue.destination as! ParkingDetailsViewController
+            destVC.detailTitle=selectedAnnotation?.title ?? ""
+            destVC.detailPhone=selectedAnnotation?.subtitle ?? ""
+            //destVC.detailDescription=selectedAnnotation?.description ?? ""
+            
+        }
     }
 
     // app id: sk646zkhc2

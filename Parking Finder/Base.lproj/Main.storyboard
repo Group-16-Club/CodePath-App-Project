@@ -11,7 +11,7 @@
         <!--ParkingDetailsViewController-->
         <scene sceneID="eB4-Nt-oSt">
             <objects>
-                <viewController title="ParkingDetailsViewController" modalPresentationStyle="fullScreen" id="ccT-ie-OqD" customClass="ParkingDetailsViewController" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ParkingDetailsViewController" title="ParkingDetailsViewController" modalPresentationStyle="fullScreen" id="ccT-ie-OqD" customClass="ParkingDetailsViewController" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WyF-Nm-GlA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,6 +20,9 @@
                                 <rect key="frame" x="15" y="44" width="55.5" height="32.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="back"/>
+                                <connections>
+                                    <action selector="didBack:" destination="ccT-ie-OqD" eventType="touchUpInside" id="Q9r-Le-3SU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Finder Lot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq1-oa-Upw">
                                 <rect key="frame" x="20" y="96.5" width="210.5" height="30"/>
@@ -205,7 +208,7 @@ Event Rates Supersede Other Rates</string>
                     <connections>
                         <outlet property="mapView" destination="LIz-ns-r8D" id="gNw-af-lLq"/>
                         <outlet property="searchTextField" destination="9gB-nl-9mU" id="XYR-yw-KDx"/>
-                        <segue destination="ccT-ie-OqD" kind="presentation" id="KOo-Ws-wdL"/>
+                        <segue destination="ccT-ie-OqD" kind="presentation" identifier="ParkingDetails" id="E0h-Y0-12Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVM-ex-JM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

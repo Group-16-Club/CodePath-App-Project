@@ -18,11 +18,14 @@ class ParkingDetailsViewController: UIViewController {
     @IBOutlet weak var ratesText: UITextView!
     @IBOutlet weak var isOpenLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
+    var detailTitle = ""
+    var detailDescription = ""
+    var detailPhone=""
     
     @IBOutlet weak var favoriteButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(detailTitle)
         // Do any additional setup after loading the view.
     }
     
@@ -57,5 +60,9 @@ class ParkingDetailsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func didBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
