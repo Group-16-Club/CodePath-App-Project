@@ -103,7 +103,6 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
         if let annotation = view.annotation {
             if let title = annotation.title! {
                 print("Tapped \(title) pin")
-                //you can add whatever data you want in sender:()
                 self.selectedAnnotation=view.annotation as? MKPointAnnotation
                 performSegue(withIdentifier: "ParkingDetails", sender: self)
                 

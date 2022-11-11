@@ -18,11 +18,10 @@ class ParkingDetailsViewController: UIViewController {
     @IBOutlet weak var ratesText: UITextView!
     @IBOutlet weak var isOpenLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var favoriteButton: UIButton!
     var detailTitle = ""
     var detailDescription = ""
     var detailPhone=""
-    
-    @IBOutlet weak var favoriteButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         print(detailTitle)
