@@ -27,6 +27,8 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.distanceFilter = 200
         locationManager.requestWhenInUseAuthorization()
+        mapView.delegate = self
+        getParkingSpots()
         
         // Get current longitude and latitude
         /*
@@ -54,6 +56,27 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
     */
     }
 
+    func getParkingSpots() {
+        var region = MKCoordinateRegion()
+        region.center = CLLocationCoordinate2D(latitude: 40.7812, longitude:-73.9665)
+        let request = MKLocalPointsOfInterestRequest(center: region.center, radius: 10000.0)
+        request.pointOfInterestFilter = MKPointOfInterestFilter(including: [.parking])
+            let search = MKLocalSearch(request: request)
+            search.start { (response , error ) in
+                guard let response = response else {
+                    return
+                }
+            for item in response.mapItems {
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = item.placemark.coordinate
+                annotation.title = item.name
+                annotation.subtitle = item.phoneNumber
+                self.mapView.addAnnotation(annotation)
+            }
+        }
+    }
+    
+    
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.authorizedWhenInUse {
             locationManager.startUpdatingLocation()
