@@ -29,7 +29,7 @@ The app shows users nearby parking options, and displays information to the user
 
 - [x] User can view a map and interact with a map
 - [x] User can log in or sign up
-- [ ] User can view information on parking spaces
+- [x] User can view information on parking spaces
 - [x] User can change their profile picture
 - [ ] User can favorite a parking space
 - [x] User can access the detailed parking information from their profile screen
