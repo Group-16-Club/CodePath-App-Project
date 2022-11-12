@@ -73,7 +73,6 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
                 annotation.coordinate = item.placemark.coordinate
                 annotation.title = item.name
                 annotation.subtitle = item.phoneNumber
-                
                 self.mapView.addAnnotation(annotation)
             }
         }
@@ -103,27 +102,19 @@ class MapDisplayViewController: UIViewController, CLLocationManagerDelegate, MKM
         if let annotation = view.annotation {
             if let title = annotation.title! {
                 print("Tapped \(title) pin")
-                self.selectedAnnotation=view.annotation as? MKPointAnnotation
+                self.selectedAnnotation = view.annotation as? MKPointAnnotation
                 performSegue(withIdentifier: "ParkingDetails", sender: self)
                 
             }
         }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ParkingDetails"{
             let destVC=segue.destination as! ParkingDetailsViewController
-            destVC.detailTitle=selectedAnnotation?.title ?? ""
-            destVC.detailPhone=selectedAnnotation?.subtitle ?? ""
-            //destVC.detailDescription=selectedAnnotation?.description ?? ""
+            destVC.detailTitle = selectedAnnotation?.title ?? ""
+            destVC.detailPhone = selectedAnnotation?.subtitle ?? ""
             
         }
     }
-
-    // app id: sk646zkhc2
-    // app key: OyJGs95epm5nFQdcjUYaD54Gl3XAB9Tx2FduPzwH
-    // hash token: c2s2NDZ6a2hjMnxPeUpHczk1ZXBtNW5GUWRjalVZYUQ1NEdsM1hBQjlUeDJGZHVQendI
-    // expiration date: 2022-11-24T23:23:34.5Z
-    
-    
-
 }

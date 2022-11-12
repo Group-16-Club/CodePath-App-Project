@@ -14,17 +14,18 @@ class ParkingDetailsViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var hoursText: UILabel!
-    @IBOutlet weak var ratesText: UITextView!
-    @IBOutlet weak var isOpenLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var describeLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     var detailTitle = ""
-    var detailDescription = ""
-    var detailPhone=""
+    var detailPhone = ""
+    var detailLocation = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(detailTitle)
+        nameLabel.text = detailTitle
+        numberLabel.text = detailPhone
+        // locationLabel.text = detailLocation
+        
         // Do any additional setup after loading the view.
     }
     
