@@ -221,3 +221,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Sprint%202%20Walkthrough.gif' title='Sprint 2 Video Walkthrough' width='' alt='Sprint 2 Video Walkthrough' />
 
+## Sprint 3 - Video Walkthrough
+
+<img src='https://github.com/Group-16-Club/CodePath-App-Project/blob/main/Sprint%203%20Walk%20Through.gif' title='Sprint 3 Video Walkthrough' width='' alt='Sprint 3 Video Walkthrough' />
+
