@@ -20,23 +20,38 @@ class ParkingDetailsViewController: UIViewController {
     var detailTitle = ""
     var detailPhone = ""
     var detailLocation = ""
+    var currParking: PFObject!
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = detailTitle
         numberLabel.text = detailPhone
-        // locationLabel.text = detailLocation
-        
         // Do any additional setup after loading the view.
     }
     
     var favorited:Bool = false
     func setFavorite(_ isFavorited:Bool) {
         favorited = isFavorited
-        // let user = PFUser.current()!
-        // let query = PFQuery(className: "parkingSpot")
+        let user = PFUser.current()!
         // let parkingDetails = query.getObjectInBackground(withId: )
+        let parking = PFObject(className: "Parking")
+        currParking = parking
+        parking["name"] = detailTitle
+        parking["phone"] = detailPhone
+        parking["location"] = "some location"
+//        parking["location"] = detailLocation
+        // locationLabel.text = detailLocation
+        parking.saveInBackground{ (success, error) in
+            if success{
+                print("parking saved")
+            }
+            else{
+                print("error saving parking")
+            }
+        }
+        
         if (favorited) {
             favoriteButton.setImage(UIImage(named:"favor-icon"), for: UIControl.State.normal)
+            user.addObjects(from: [parking], forKey: "savedParking")
         } else {
             favoriteButton.setImage(UIImage(named:"unfavor-icon"), for: UIControl.State.normal)
         }
